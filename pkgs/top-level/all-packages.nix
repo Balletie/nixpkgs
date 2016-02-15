@@ -1875,6 +1875,8 @@ let
 
   hevea = callPackage ../tools/typesetting/hevea { };
 
+  hfsprogs = callPackage ../tools/filesystems/hfsprogs { };
+
   highlight = callPackage ../tools/text/highlight {
     lua = lua5;
   };
