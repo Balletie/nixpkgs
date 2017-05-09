@@ -25,6 +25,7 @@ stdenv.mkDerivation rec {
     substituteInPlace pommed.conf.mactel --replace /usr $out
     substituteInPlace pommed.conf.pmac --replace /usr $out
     substituteInPlace pommed/beep.h --replace /usr $out
+    substituteInPlace pommed/evdev.h --replace 0262 0252
     substituteInPlace pommed/cd_eject.c --replace /usr/bin/eject ${eject}/bin/eject
   '';
 
